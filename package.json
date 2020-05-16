@@ -1,6 +1,6 @@
 {
   "name": "node-iro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fast and clean terminal coloring and styling utility for Deno and Node.js.",
   "main": "dist/iro.js",
   "repository": {
@@ -26,7 +26,7 @@
   },
   "files": [
     "/dist",
-    "/lib"
+    "/src"
   ],
   "scripts": {
     "build": "rm -rf dist && tsc",
