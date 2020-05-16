@@ -16,7 +16,7 @@ Fast and clean terminal coloring and styling utility for Deno and Node.js.
 
 ```ts
 // hello.ts
-import iro, { bold, red } from 'https://cdn.jsdelivr.net/npm/node-iro@1.0.1/src/iro.ts';
+import iro, { bold, red } from 'https://deno.land/x/iro/src/iro.ts';
 
 console.log(iro('Hello, World!', bold, red));
 ```
