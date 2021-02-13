@@ -1,8 +1,8 @@
 {
   "name": "node-iro",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fast and clean terminal coloring and styling utility for Deno and Node.js.",
-  "main": "dist/iro.js",
+  "main": "dist/iro.node.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jozsefsallai/iro.git"
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/jozsefsallai/iro#readme",
   "devDependencies": {
+    "@types/node": "^14.14.27",
     "ts-node": "^8.10.1",
     "tslint": "^5.18.0",
     "typescript": "^3.9.2"

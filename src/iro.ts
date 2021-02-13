@@ -1,4 +1,4 @@
-interface Block {
+export interface Block {
   open: string;
   close: string;
   regex: RegExp;
@@ -45,8 +45,8 @@ export const bgCyan: Block = init(46, 49);
 export const bgWhite: Block = init(47, 49);
 
 function iro(str: string, ...blocks: Block[]): string {
-  let open: string = "";
-  let close: string = "";
+  let open = '';
+  let close = '';
   let cache: Block;
 
   for (let i = 0; i < blocks.length; i++) {
