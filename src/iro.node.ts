@@ -1,5 +1,5 @@
 // deno-lint-ignore-file
-import _iro, { Block } from './iro.ts';
+import _iro, { Block } from './iro';
 
 function areColorsEnabled() {
   if (typeof process !== 'undefined') {
@@ -22,4 +22,4 @@ export default function iro(str: string, ...blocks: Block[]): string {
   return _iro(str, ...blocks);
 }
 
-export * from './iro.ts';
+export * from './iro';
