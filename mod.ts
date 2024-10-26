@@ -1,4 +1,4 @@
-import _iro, { Block } from './src/iro.ts';
+import _iro, { type Block } from "./src/iro.ts";
 
 export default function iro(str: string, ...blocks: Block[]): string {
   if (Deno.noColor) {
@@ -8,4 +8,4 @@ export default function iro(str: string, ...blocks: Block[]): string {
   return _iro(str, ...blocks);
 }
 
-export * from './src/iro.ts';
+export * from "./src/iro.ts";
