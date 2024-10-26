@@ -14,11 +14,17 @@ Fast and clean terminal coloring and styling utility for Deno and Node.js.
 
 ### Deno
 
+**Install using JSR:**
+
+```sh
+deno add jsr:@sallai/iro
+```
+
 ```ts
 // hello.ts
-import iro, { bold, red } from 'https://deno.land/x/iro/mod.ts';
+import iro, { bold, red } from "@sallai/iro";
 
-console.log(iro('Hello, World!', bold, red));
+console.log(iro("Hello, World!", bold, red));
 ```
 
 ### Node.js
@@ -39,10 +45,10 @@ yarn add node-iro
 
 ```js
 // hello.js
-const iro = require('node-iro').default;
-const { bold, red } = require('node-iro');
+const iro = require("node-iro").default;
+const { bold, red } = require("node-iro");
 
-console.log(iro('Hello, World!', bold, red));
+console.log(iro("Hello, World!", bold, red));
 ```
 
 ![Example](.github/assets/01.png)
@@ -53,8 +59,15 @@ console.log(iro('Hello, World!', bold, red));
 
 ```js
 // example taken from https://github.com/lukeed/kleur#nested-methods :)
-console.log(iro(`foo ${iro('red', red, bold)} bar ${iro('cyan', cyan)} baz`, yellow));
-console.log(iro('foo ' + iro('red', red, bold) + ' bar ' + iro('cyan', cyan) + ' baz', yellow));
+console.log(
+  iro(`foo ${iro("red", red, bold)} bar ${iro("cyan", cyan)} baz`, yellow)
+);
+console.log(
+  iro(
+    "foo " + iro("red", red, bold) + " bar " + iro("cyan", cyan) + " baz",
+    yellow
+  )
+);
 ```
 
 ![Example](.github/assets/02.png)
@@ -65,9 +78,9 @@ console.log(iro('foo ' + iro('red', red, bold) + ' bar ' + iro('cyan', cyan) + '
 **Colors:** black, red, green, yellow, blue, magenta, cyan, white, gray, grey<br>
 **Background colors:** bgBlack, bgRed, bgGreen, bgYellow, bgBlue, bgMagenta, bgCyan, bgWhite
 
-*Note: `italic` and `strikethrough` are not widely supported.*
+_Note: `italic` and `strikethrough` are not widely supported._
 
-*Note: iro supports [`NO_COLOR`](https://no-color.org/) both on Deno and Node.js.*
+_Note: iro supports [`NO_COLOR`](https://no-color.org/) both on Deno and Node.js._
 
 ## Credits
 
